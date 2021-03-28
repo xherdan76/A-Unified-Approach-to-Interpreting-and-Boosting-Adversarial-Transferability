@@ -4,7 +4,7 @@
 
 Here are codes for our paper [A Unified Approach to Interpreting and Boosting Adversarial Transferability](https://arxiv.org/abs/2010.04055)(ICLR 2021).
 
-Xin Wang, Jie Ren, Shuyun Lin, Xiangming Zhu, Yisen Wang, Quanshi Zhang
+Xin Wang*, Jie Ren*, Shuyun Lin, Xiangming Zhu, Yisen Wang, Quanshi Zhang
 
 ## - Requirements
 
