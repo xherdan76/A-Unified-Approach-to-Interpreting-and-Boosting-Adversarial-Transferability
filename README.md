@@ -66,3 +66,6 @@ year={2021},
 url={https://openreview.net/forum?id=X76iqnUbBjz}
 }
 ```
+## Contact
+
+If you have any question, please feel free to contact us via `xin.wang@sjtu.edu.cn`.
