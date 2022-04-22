@@ -51,7 +51,16 @@ python main_interaction_loss.py --arch resnet34 --lam 1  --gamma 0.2 --att SGM+I
 | PGD *L_inf* +IR | 0.857  | 0.858  | 0.864  | 0.635  | 0.539 | 0.538 |  0.498   |
 | SGM + IR        | 0.940  | 0.922  | 0.931  | 0.704  | 0.696 | 0.663 |  0.626   |
 
+* Update 4/22/2022: we notice that the results may change with different versions of pytorch. The results run with the same command but different versions of pytorch are shown as follows.  Thus, if you want to reproduce similar reusults in the paper, please use `pytorch 1.6.0` and `torchvision=0.7.0`. 
 
+```
+python main_interaction_loss.py --arch resnet34 --lam 1 --att IR  --p inf
+```
+
+| Method \ Target | VGG-16 | RN-152 | DN-201 | SE-154 | IncV3 | IncV4 | IncResV2 | 
+|:--------------- |:------:|:------:|:------:|:------:|:-----:|:-----:|:--------:|
+| PGD *L_inf* +IR (pytorch=1.6.0)   | 0.857  | 0.858  | 0.864  | 0.635  | 0.539 | 0.538 |  0.498   |
+| PGD *L_inf* +IR (pytorch=1.10.0)   | 0.785  | 0.768  | 0.799  | 0.622  | 0.545 | 0.519 |  0.476   |
 ## - Citation
 
 Please cite the following paper, if you use this code.
